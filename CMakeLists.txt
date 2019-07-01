@@ -9,8 +9,6 @@ set(PROJECT_SOURCE
         Objeto.cpp Objeto.h)
 set(CMAKE_CXX_STANDARD 14)
 
-# Si esta configuracion funciona solamente en Windows,
-# En caso funcionara en Macs cambiarlo a:  if (WIN32 AND APPLE)
 if (WIN32)
     # Modificar al folder donde se encuentre la libreria SFML instalada
     set(SFML_ROOT "C:/shared") # <--------- Modificar Aqui
