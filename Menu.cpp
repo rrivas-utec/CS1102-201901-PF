@@ -55,8 +55,6 @@ void Menu::removerObjeto() {
 void Menu::dibujarMapa() {
     limpiar();
     tierra.dibujarTierra();
-    limpiar();
-    esperar();
 }
 
 void Menu::mostrarMenu() {
