@@ -13,7 +13,7 @@ set(PROJECT_SOURCE
 set(CMAKE_CXX_STANDARD 14)
 
 if (WIN32)
-	# Valido solo para WINDOWS en LINUX o OSX no debe de cambiarse
+    # Valido solo para WINDOWS en LINUX o OSX no debe de cambiarse
     # Modificar al folder donde se encuentre la libreria SFML instalada en su PC
     set(SFML_ROOT "C:/shared/SFML-2.5.1") # <--------- Modificar SOLO AQUI
 
