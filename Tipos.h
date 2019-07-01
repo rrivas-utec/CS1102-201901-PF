@@ -7,6 +7,7 @@
 
 #include <string>
 using namespace std;
+
 // Definiendo alias
 using TipoEntero = int;
 using TipoCaracter = char;

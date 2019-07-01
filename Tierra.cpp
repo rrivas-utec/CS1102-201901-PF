@@ -68,7 +68,7 @@ void Tierra::actualizarTierra() {
     plano->clear();
     for (auto obj: objetos) {
         sf::CircleShape shape(10);
-        shape.setPosition(obj->getPosX(), obj->getPosY());
+        shape.setPosition(static_cast<float>(obj->getPosX()), static_cast<float>(obj->getPosY()));
         shape.setFillColor(listaColores[obj->getColor()]);
         plano->draw(shape);
     }

@@ -34,3 +34,7 @@
 # CLion folders
 cmake-build-debug
 .idea
+
+# Visual Studio
+out
+.vs
