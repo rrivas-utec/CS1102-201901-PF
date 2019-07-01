@@ -7,7 +7,8 @@ set(PROJECT_SOURCE
         Tipos.h
         Menu.cpp Menu.h
         Tierra.cpp Tierra.h
-        Objeto.cpp Objeto.h)
+        Objeto.cpp Objeto.h
+    )
 
 # C++ Standard se sugiere 11 ó 14
 set(CMAKE_CXX_STANDARD 14)
@@ -26,14 +27,16 @@ endif()
 
 # Instrucciones para generar el ejecutable
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCE})
+
 find_package(SFML 2.5.1
-        COMPONENTS 
-			system 
-			window 
-			graphics 
-		REQUIRED)
+        COMPONENTS
+            system
+            window
+            graphics
+        REQUIRED)
+
 target_link_libraries (${PROJECT_NAME}
         sfml-system
         sfml-window
         sfml-graphics
-		)
+        )
